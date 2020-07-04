@@ -6,7 +6,7 @@ function tester(value){
     console.log(value);
 }
 
-const fetchData = async () =>{
+export const fetchData = async () =>{
     try{
         const response = await axios.get(url);
         tester(response);
@@ -16,4 +16,5 @@ const fetchData = async () =>{
 
     }
 }
+
 
